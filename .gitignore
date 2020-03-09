@@ -1,6 +1,7 @@
 HELP.md
 .gradle
 build/
+**/src/min/resources/templates/index.html
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**
 !**/src/test/**

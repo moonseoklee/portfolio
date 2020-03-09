@@ -14,7 +14,7 @@ body {
 }
 
 a {
-  color: #03C4EB;
+  color: white;
   transition: 0.5s;
 }
 
@@ -117,7 +117,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 30px 0 10px 0;
   font-weight: 700;
   line-height: 48px;
-  text-transform: uppercase;
+
   color: #fff;
 }
 
@@ -162,25 +162,25 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .btn-get-started {
-  background: #03C4EB;
-  border: 2px solid #03C4EB;
+  background: darkblue;
+  /*border: 2px solid #03C4EB;*/
   color: #fff;
 }
 
 #hero .btn-get-started:hover {
   background: none;
-  border: 2px solid #fff;
+
   color: #fff;
 }
 
 #hero .btn-services {
-  border: 2px solid #fff;
-  color: #fff;
+
+  color: black;
 }
 
 #hero .btn-services:hover {
-  background: #03C4EB;
-  border: 2px solid #03C4EB;
+  background: darkblue;
+
 }
 
 /*--------------------------------------------------------------
@@ -204,7 +204,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   letter-spacing: 3px;
-  text-transform: uppercase;
+
 }
 
 #header #logo h1 a, #header #logo h1 a:hover {
@@ -464,7 +464,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .section-title {
   font-size: 32px;
   color: #111;
-  text-transform: uppercase;
+
   text-align: center;
   font-weight: 700;
 }
@@ -603,7 +603,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #subscribe .subscribe-btn {
   font-family: "Raleway", sans-serif;
-  text-transform: uppercase;
+
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
@@ -752,7 +752,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #team .member .pic {
   margin-bottom: 15px;
   overflow: hidden;
-  height: 260px;
+  height: 40px;
 }
 
 #team .member .pic img {
@@ -847,11 +847,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #contact .form button[type="submit"] {
-  background: #03C4EB;
   border: 0;
-  padding: 10px 24px;
-  color: #fff;
-  transition: 0.4s;
+  transition: 0.9s;
+  outline:0;
+
 }
 
 #contact .form button[type="submit"]:hover {
