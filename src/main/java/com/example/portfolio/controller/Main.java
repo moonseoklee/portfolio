@@ -28,14 +28,14 @@ import java.nio.file.Paths;
 public class Main {
     private Boj bojService = new Boj();
 
-    @GetMapping("/src/main/resources/templates/index")
+    @GetMapping("/")
     public String boj(Model model) throws IOException {
 
         String[] info = bojService.crawling();
         System.out.println(info[4]);
         model.addAttribute("info",info);
 
-        return "/index";
+        return "/index2";
     }
 
 
