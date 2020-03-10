@@ -35,7 +35,7 @@ public class Main {
         System.out.println(info[4]);
         model.addAttribute("info",info);
 
-        return "../../../../index.html";
+        return "/index";
     }
 
 
