@@ -28,7 +28,7 @@ import java.nio.file.Paths;
 public class Main {
     private Boj bojService = new Boj();
 
-    @GetMapping("/")
+    @GetMapping("/src/main/resources/templates/index")
     public String boj(Model model) throws IOException {
 
         String[] info = bojService.crawling();
