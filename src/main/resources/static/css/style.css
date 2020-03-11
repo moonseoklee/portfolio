@@ -7,15 +7,17 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
 body {
   background: #fff;
-  color: lightgray;
+  color: #071461;
+  font-weight:bold;
   font-family: "Open Sans", sans-serif;
 }
 .pop-layer .pop-container {
   padding: 20px 25px;
 }
-
+.ns{font-family: 'Noto Sans KR', sans-serif;}
 .pop-layer p.ctxt {
   color: #666;
   line-height: 25px;
