@@ -10,7 +10,7 @@
 
 body {
   background: #fff;
-  color: #071461;
+  color: black;
   font-weight:bold;
   font-family: "Open Sans", sans-serif;
 }
@@ -234,7 +234,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .btn-get-started {
-  background: darkblue;
+  background: darkgreen;
   /*border: 2px solid #03C4EB;*/
   color: #fff;
 }
@@ -251,7 +251,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .btn-services:hover {
-  background: darkblue;
+  background: darkgreen;
 
 }
 
@@ -389,7 +389,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu a:hover, .nav-menu li:hover > a, .nav-menu .menu-active > a {
-  color: #03C4EB;
+  color: darkgreen;
 }
 
 .nav-menu ul {
@@ -584,7 +584,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #about .about-title {
-  color: #333;
+  color: darkgreen;
   font-weight: 700;
   font-size: 28px;
 }
@@ -642,7 +642,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #skills .service-title a {
   margin-left: 20px;
-  color: #111;
+  color: black;
 }
 
 #skills .service-description {
@@ -874,7 +874,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #contact .info i {
   font-size: 32px;
-  color: #03C4EB;
+  color: darkgreen;
   float: left;
 }
 
