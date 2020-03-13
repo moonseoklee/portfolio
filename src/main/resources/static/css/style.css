@@ -566,7 +566,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #about .about-img img {
-  max-width: 100%;
+  max-width: 70%;
 }
 
 @media (max-width: 768px) {
@@ -584,7 +584,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #about .about-title {
-  color: darkgreen;
+  color: black;
   font-weight: 700;
   font-size: 28px;
 }
