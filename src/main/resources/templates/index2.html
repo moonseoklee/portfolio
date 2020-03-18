@@ -525,6 +525,8 @@ Contact Section
                     <!--div id="sendmessage">Your message has been sent. Thank you!</div-->
 
                     <div class="text-center"><button type="submit" style="background-color:transparent" onclick="location.href='mailto:gwinnyiee@gmail.com'"><img src="img/gmail.png" alt=""><a href="mailto:gwinnyiee@gmail.com"></a></button></div>
+                    <button id="submit_btn" class="body__submit_btn" onclick="saveToFirebase('aa')">제출</button>
+
 
 
 
@@ -575,7 +577,52 @@ Footer
 <!-- Template Specisifc Custom Javascript File -->
 <script src="js/custom.js"></script>
 
-<script src="contactform/contactform.js"></script>
 
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/7.11.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/7.11.0/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-database.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-analytics.js"></script>
+<script>
+    // Your web app's Firebase configuration
+    var firebase = require('firebase/app');
+    require('firebase/auth');
+    require('firebase/database');
+
+    var firebaseConfig = {
+        apiKey: "AIzaSyBNqF_5ofKbgRdDGMmv6_EGkpaR0Ij32zM",
+        authDomain: "portfolio-5fe71.firebaseapp.com",
+        databaseURL: "https://portfolio-5fe71.firebaseio.com",
+        projectId: "portfolio-5fe71",
+        storageBucket: "portfolio-5fe71.appspot.com",
+        messagingSenderId: "184884494413",
+        appId: "1:184884494413:web:cbc1db37b956bb70d21c04",
+        measurementId: "G-49PBFW3G2H"
+    };
+    // Initialize Firebase
+
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+    var db= firebase.database();
+    var col = db.ref().child('key');
+    function saveToFirebase(email) {
+        var emailObject = {
+            email: email        };
+
+        col.push(emailObject)
+    }
+
+    saveToFirebase(email);
+</script>
 
 </body>
